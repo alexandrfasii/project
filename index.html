@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>/f.dev — Websites That Bring Clients</title>
+  <meta name="description" content="I build and redesign websites for local businesses — moving companies, daycares, service brands — so they convert visitors into paying clients.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="header__nav container">
+      <a href="/" class="header__logo">
+        <img src="assets/fdev-logo.png" alt="/f.dev" class="header__logo-img">
+      </a>
+      <ul class="header__links">
+        <li><a href="#work" class="header__link">Work</a></li>
+        <li><a href="#services" class="header__link">Services</a></li>
+        <li><a href="#process" class="header__link">Process</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--primary">Get a Website</a>
+      <button class="header__burger" id="burger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+    <div class="header__mobile-menu" id="mobileMenu">
+      <a href="#work" class="header__mobile-link">Work</a>
+      <a href="#services" class="header__mobile-link">Services</a>
+      <a href="#process" class="header__mobile-link">Process</a>
+      <a href="#contact" class="btn btn--primary">Get a Website</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span class="hero__badge-slash">/</span> Web Design &amp; Redesign
+          </div>
+          <h1 class="hero__headline">
+            Your website is<br>
+            <span class="text-gradient">losing you clients.</span><br>
+            I fix that.
+          </h1>
+          <p class="hero__sub">
+            I build new websites and redesign existing ones for local businesses — moving companies, daycares, service brands — so they convert visitors into paying clients.
+          </p>
+          <div class="hero__actions">
+            <a href="#work" class="btn btn--primary btn--lg">View Work</a>
+            <a href="#contact" class="btn btn--ghost btn--lg">Get a Website</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="mockup">
+            <div class="mockup__bar">
+              <span class="mockup__dot"></span>
+              <span class="mockup__dot"></span>
+              <span class="mockup__dot"></span>
+              <div class="mockup__url">tinyland.com</div>
+            </div>
+            <div class="mockup__screen">
+              <div class="mockup__hero-block">
+                <div class="mockup__headline-line mockup__headline-line--lg"></div>
+                <div class="mockup__headline-line mockup__headline-line--md"></div>
+                <div class="mockup__cta-row">
+                  <div class="mockup__btn mockup__btn--accent"></div>
+                  <div class="mockup__btn mockup__btn--ghost"></div>
+                </div>
+              </div>
+              <div class="mockup__cards-row">
+                <div class="mockup__card">
+                  <div class="mockup__card-icon"></div>
+                  <div class="mockup__card-line"></div>
+                  <div class="mockup__card-line mockup__card-line--short"></div>
+                </div>
+                <div class="mockup__card">
+                  <div class="mockup__card-icon mockup__card-icon--2"></div>
+                  <div class="mockup__card-line"></div>
+                  <div class="mockup__card-line mockup__card-line--short"></div>
+                </div>
+                <div class="mockup__card">
+                  <div class="mockup__card-icon mockup__card-icon--3"></div>
+                  <div class="mockup__card-line"></div>
+                  <div class="mockup__card-line mockup__card-line--short"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__visual-glow" aria-hidden="true"></div>
+        </div>
+
+      </div>
+      <div class="hero__slash-bg" aria-hidden="true">/</div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"><span class="section-divider__slash">/</span></div>
+
+    <!-- ==================== WORK ==================== -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label"><span class="slash">/</span> Work</span>
+          <h2 class="section__title">Results, not just design</h2>
+          <p class="section__sub">Real projects built for real local businesses.</p>
+        </div>
+
+        <div class="projects__grid">
+
+          <article class="project-card">
+            <div class="project-card__preview project-card__preview--daycare">
+              <div class="project-card__screen">
+                <div class="pc__nav"></div>
+                <div class="pc__hero">
+                  <div class="pc__h-text">
+                    <div class="pc__line pc__line--title"></div>
+                    <div class="pc__line pc__line--sub"></div>
+                    <div class="pc__btn"></div>
+                  </div>
+                  <div class="pc__h-img"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__type">New Website</span>
+                <span class="project-card__result">+60% more inquiries</span>
+              </div>
+              <h3 class="project-card__name">Tinyland Daycare</h3>
+              <p class="project-card__desc">More enrollments. Cleaner design. Built mobile-first for parents searching on their phones.</p>
+              <a href="#" class="btn btn--outline">View Live <span class="arrow">→</span></a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__preview project-card__preview--moving">
+              <div class="project-card__screen">
+                <div class="pc__nav"></div>
+                <div class="pc__hero">
+                  <div class="pc__h-text">
+                    <div class="pc__line pc__line--title"></div>
+                    <div class="pc__line pc__line--sub"></div>
+                    <div class="pc__btn pc__btn--blue"></div>
+                  </div>
+                  <div class="pc__h-truck"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__type project-card__type--redesign">Redesign</span>
+                <span class="project-card__result">More calls. Better trust.</span>
+              </div>
+              <h3 class="project-card__name">Swift Moving Co.</h3>
+              <p class="project-card__desc">Complete overhaul of an outdated site. Quote requests up significantly from day one.</p>
+              <a href="#" class="btn btn--outline">View Live <span class="arrow">→</span></a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__preview project-card__preview--cleaning">
+              <div class="project-card__screen">
+                <div class="pc__nav"></div>
+                <div class="pc__hero">
+                  <div class="pc__h-text">
+                    <div class="pc__line pc__line--title"></div>
+                    <div class="pc__line pc__line--sub"></div>
+                    <div class="pc__btn pc__btn--teal"></div>
+                  </div>
+                  <div class="pc__h-clean"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__type">New Website</span>
+                <span class="project-card__result">Booked out 3 weeks ahead</span>
+              </div>
+              <h3 class="project-card__name">BrightClean Services</h3>
+              <p class="project-card__desc">Zero web presence to fully booked. Fast, local-SEO-ready site delivered in under a week.</p>
+              <a href="#" class="btn btn--outline">View Live <span class="arrow">→</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"><span class="section-divider__slash">/</span></div>
+
+    <!-- ==================== BEFORE / AFTER ==================== -->
+    <section class="section section--dark" id="before-after">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label"><span class="slash">/</span> Transformation</span>
+          <h2 class="section__title">The difference a redesign makes</h2>
+          <p class="section__sub">Drag to compare. Same business — completely different results.</p>
+        </div>
+
+        <div class="ba-wrapper">
+          <div class="ba-slider" id="baSlider">
+
+            <div class="ba-after">
+              <div class="ba-screen ba-screen--after">
+                <div class="ba-screen__nav ba-screen__nav--dark">
+                  <div class="ba-screen__logo ba-screen__logo--white"></div>
+                  <div class="ba-screen__links">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="ba-screen__cta-btn"></div>
+                </div>
+                <div class="ba-screen__body">
+                  <div class="ba-screen__text">
+                    <div class="ba-line ba-line--xl ba-line--white"></div>
+                    <div class="ba-line ba-line--lg ba-line--white"></div>
+                    <div class="ba-line ba-line--sm ba-line--muted"></div>
+                    <div class="ba-line ba-line--sm ba-line--muted ba-line--shorter"></div>
+                    <div class="ba-screen__btns">
+                      <div class="ba-btn ba-btn--gradient"></div>
+                      <div class="ba-btn ba-btn--ghost"></div>
+                    </div>
+                  </div>
+                  <div class="ba-screen__visual">
+                    <div class="ba-card">
+                      <div class="ba-card__img"></div>
+                      <div class="ba-card__line"></div>
+                      <div class="ba-card__line ba-card__line--short"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ba-screen__features">
+                  <div class="ba-feature"></div>
+                  <div class="ba-feature"></div>
+                  <div class="ba-feature"></div>
+                </div>
+              </div>
+              <div class="ba-label ba-label--after">After</div>
+            </div>
+
+            <div class="ba-before">
+              <div class="ba-screen ba-screen--before">
+                <div class="ba-screen__nav ba-screen__nav--light">
+                  <div class="ba-screen__logo ba-screen__logo--dark"></div>
+                  <div class="ba-screen__links ba-screen__links--dark">
+                    <span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="ba-screen__body ba-screen__body--light">
+                  <div class="ba-screen__img-block"></div>
+                  <div class="ba-screen__text">
+                    <div class="ba-line ba-line--md ba-line--dark"></div>
+                    <div class="ba-line ba-line--sm ba-line--dark"></div>
+                    <div class="ba-line ba-line--sm ba-line--dark"></div>
+                    <div class="ba-line ba-line--sm ba-line--gray"></div>
+                    <div class="ba-line ba-line--sm ba-line--gray ba-line--shorter"></div>
+                    <div class="ba-btn ba-btn--old"></div>
+                  </div>
+                </div>
+                <div class="ba-screen__noise"></div>
+              </div>
+              <div class="ba-label ba-label--before">Before</div>
+            </div>
+
+            <div class="ba-handle" id="baHandle">
+              <div class="ba-handle__line"></div>
+              <div class="ba-handle__circle">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M7 10L3 6M3 6L7 2M3 6H17M13 10L17 14M17 14L13 18M17 14H3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="ba-handle__line"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"><span class="section-divider__slash">/</span></div>
+
+    <!-- ==================== WHAT YOU GET ==================== -->
+    <section class="section" id="outcomes">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label"><span class="slash">/</span> Outcomes</span>
+          <h2 class="section__title">What you actually get</h2>
+        </div>
+
+        <div class="outcomes__grid">
+          <div class="outcome-item">
+            <span class="outcome-item__slash" aria-hidden="true">/</span>
+            <div class="outcome-item__body">
+              <h4 class="outcome-item__title">More calls &amp; inquiries</h4>
+              <p class="outcome-item__desc">Clear CTAs and trust signals that turn visitors into leads immediately.</p>
+            </div>
+          </div>
+          <div class="outcome-item">
+            <span class="outcome-item__slash" aria-hidden="true">/</span>
+            <div class="outcome-item__body">
+              <h4 class="outcome-item__title">Higher conversion rate</h4>
+              <p class="outcome-item__desc">Designed around what your customer needs to see before they contact you.</p>
+            </div>
+          </div>
+          <div class="outcome-item">
+            <span class="outcome-item__slash" aria-hidden="true">/</span>
+            <div class="outcome-item__body">
+              <h4 class="outcome-item__title">Fast-loading pages</h4>
+              <p class="outcome-item__desc">No bloated builders. Clean code that loads in under 2 seconds on mobile.</p>
+            </div>
+          </div>
+          <div class="outcome-item">
+            <span class="outcome-item__slash" aria-hidden="true">/</span>
+            <div class="outcome-item__body">
+              <h4 class="outcome-item__title">Mobile-first design</h4>
+              <p class="outcome-item__desc">80% of your clients search from their phone. Your site will be ready.</p>
+            </div>
+          </div>
+          <div class="outcome-item">
+            <span class="outcome-item__slash" aria-hidden="true">/</span>
+            <div class="outcome-item__body">
+              <h4 class="outcome-item__title">Premium visual identity</h4>
+              <p class="outcome-item__desc">Looks like a $5,000 website. Positions you ahead of every local competitor.</p>
+            </div>
+          </div>
+          <div class="outcome-item">
+            <span class="outcome-item__slash" aria-hidden="true">/</span>
+            <div class="outcome-item__body">
+              <h4 class="outcome-item__title">You own it — fully</h4>
+              <p class="outcome-item__desc">No subscriptions, no builders, no lock-in. Your site, your code, your business.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"><span class="section-divider__slash">/</span></div>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="section section--alt" id="services">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label"><span class="slash">/</span> Services</span>
+          <h2 class="section__title">Two ways I can help</h2>
+          <p class="section__sub">Whether you're starting from scratch or fixing what's broken.</p>
+        </div>
+
+        <div class="services__grid">
+
+          <div class="service-card">
+            <div class="service-card__number">01</div>
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                <rect x="2" y="5" width="24" height="18" rx="2" stroke="url(#sg1)" stroke-width="1.5"/>
+                <path d="M2 10H26" stroke="url(#sg1)" stroke-width="1.5"/>
+                <circle cx="6" cy="7.5" r="1" fill="url(#sg1)"/>
+                <circle cx="10" cy="7.5" r="1" fill="url(#sg1)"/>
+                <path d="M10 16H18M10 19H15" stroke="url(#sg1)" stroke-width="1.5" stroke-linecap="round"/>
+                <defs>
+                  <linearGradient id="sg1" x1="2" y1="5" x2="26" y2="23" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#7C3AED"/>
+                    <stop offset="1" stop-color="#3B82F6"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Website Creation</h3>
+            <p class="service-card__desc">You don't have a website yet. I build one from scratch — designed to convert, fast to load, built to last.</p>
+            <ul class="service-card__list">
+              <li>Custom design, zero templates</li>
+              <li>Mobile-first &amp; SEO-ready</li>
+              <li>Contact forms &amp; CTAs built in</li>
+              <li>Delivered in 7–14 days</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary">Start a Project</a>
+          </div>
+
+          <div class="service-card service-card--featured">
+            <div class="service-card__number">02</div>
+            <div class="service-card__badge">Most Popular</div>
+            <div class="service-card__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+                <path d="M4 8L14 4L24 8V14C24 19.5 19.5 23.5 14 25C8.5 23.5 4 19.5 4 14V8Z" stroke="url(#sg2)" stroke-width="1.5"/>
+                <path d="M10 14L13 17L18 11" stroke="url(#sg2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="sg2" x1="4" y1="4" x2="24" y2="25" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#7C3AED"/>
+                    <stop offset="1" stop-color="#3B82F6"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Website Redesign</h3>
+            <p class="service-card__desc">You have a site but it's not working. I rebuild it — same business, completely different results.</p>
+            <ul class="service-card__list">
+              <li>Full visual &amp; structural overhaul</li>
+              <li>Conversion-focused layout</li>
+              <li>Keep your domain &amp; content</li>
+              <li>Delivered in 5–10 days</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary">Redesign My Site</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"><span class="section-divider__slash">/</span></div>
+
+    <!-- ==================== PROCESS ==================== -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label"><span class="slash">/</span> Process</span>
+          <h2 class="section__title">Simple. Fast. Done.</h2>
+          <p class="section__sub">No long meetings. No weeks of back-and-forth.</p>
+        </div>
+
+        <div class="process__steps">
+
+          <div class="process-step">
+            <div class="process-step__number">01</div>
+            <div class="process-step__body">
+              <h4 class="process-step__title">You share your site or idea</h4>
+              <p class="process-step__desc">Send me your current website or describe your business. That's all I need to get started.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step__number">02</div>
+            <div class="process-step__body">
+              <h4 class="process-step__title">I build or redesign it</h4>
+              <p class="process-step__desc">I handle everything — design, structure, mobile, speed. You stay focused on running your business.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step__number">03</div>
+            <div class="process-step__body">
+              <h4 class="process-step__title">You get more clients</h4>
+              <p class="process-step__desc">A site built to convert, ready to launch. Your competitors won't know what happened.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"><span class="section-divider__slash">/</span></div>
+
+    <!-- ==================== CTA ==================== -->
+    <section class="cta-section" id="contact">
+      <div class="container">
+        <div class="cta-section__inner">
+          <div class="cta-section__slash" aria-hidden="true">/</div>
+          <p class="cta-section__label">Ready when you are</p>
+          <h2 class="cta-section__title">
+            I can build or redesign your website <span class="text-gradient">like this.</span>
+          </h2>
+          <p class="cta-section__sub">One message is all it takes. No commitment, no pressure — just a real conversation about your website and what it should be doing for you.</p>
+          <a href="mailto:hello@f.dev" class="btn btn--primary btn--xl">Get Started Today</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="/" class="footer__logo">
+        <img src="assets/fdev-logo.png" alt="/f.dev" class="footer__logo-img">
+      </a>
+      <p class="footer__copy">Websites that bring clients.</p>
+      <a href="mailto:hello@f.dev" class="footer__email">hello@f.dev</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
