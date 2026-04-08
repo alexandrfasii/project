@@ -3,489 +3,391 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>/f.dev — Websites That Bring Clients</title>
-  <meta name="description" content="I build and redesign websites for local businesses — moving companies, daycares, service brands — so they convert visitors into paying clients.">
+  <title>/f.dev — Modern Websites for Small Businesses</title>
+  <meta name="description" content="We build and redesign modern websites for small businesses in Ontario, Canada. Fast, clean, and designed to bring you customers.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/sections.css">
+  <link rel="stylesheet" href="styles/animations.css">
 </head>
 <body>
 
-  <!-- HEADER -->
+  <!-- ===================== HEADER ===================== -->
   <header class="header" id="header">
-    <nav class="header__nav container">
-      <a href="/" class="header__logo">
+    <div class="header__inner container">
+      <a href="/" class="header__logo" aria-label="/f.dev home">
         <img src="assets/fdev-logo.png" alt="/f.dev" class="header__logo-img">
       </a>
-      <ul class="header__links">
-        <li><a href="#work" class="header__link">Work</a></li>
-        <li><a href="#services" class="header__link">Services</a></li>
-        <li><a href="#process" class="header__link">Process</a></li>
-      </ul>
-      <a href="#contact" class="btn btn--primary">Get a Website</a>
-      <button class="header__burger" id="burger" aria-label="Toggle menu">
+      <nav class="header__nav" aria-label="Main navigation">
+        <a href="#portfolio" class="nav-link">Work</a>
+        <a href="#services"  class="nav-link">Services</a>
+        <a href="#process"   class="nav-link">Process</a>
+      </nav>
+      <a href="#contact" class="btn btn--primary">Get a quote</a>
+      <button class="header__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
         <span></span>
       </button>
-    </nav>
-    <div class="header__mobile-menu" id="mobileMenu">
-      <a href="#work" class="header__mobile-link">Work</a>
-      <a href="#services" class="header__mobile-link">Services</a>
-      <a href="#process" class="header__mobile-link">Process</a>
-      <a href="#contact" class="btn btn--primary">Get a Website</a>
+    </div>
+    <div class="header__mobile" id="mobileMenu" aria-hidden="true">
+      <nav class="header__mobile-nav">
+        <a href="#portfolio" class="mobile-nav-link">Work</a>
+        <a href="#services"  class="mobile-nav-link">Services</a>
+        <a href="#process"   class="mobile-nav-link">Process</a>
+      </nav>
+      <a href="#contact" class="btn btn--primary">Get a free quote</a>
     </div>
   </header>
 
   <main>
 
-    <!-- ==================== HERO ==================== -->
+    <!-- ===================== HERO ===================== -->
     <section class="hero" id="home">
+      <div class="hero__orbs" aria-hidden="true">
+        <span class="hero__orb hero__orb--1"></span>
+        <span class="hero__orb hero__orb--2"></span>
+        <span class="hero__orb hero__orb--3"></span>
+      </div>
       <div class="container hero__inner">
-
-        <div class="hero__content">
-          <div class="hero__badge">
-            <span class="hero__badge-slash">/</span> Web Design &amp; Redesign
-          </div>
-          <h1 class="hero__headline">
-            Your website is<br>
-            <span class="text-gradient">losing you clients.</span><br>
-            I fix that.
-          </h1>
-          <p class="hero__sub">
-            I build new websites and redesign existing ones for local businesses — moving companies, daycares, service brands — so they convert visitors into paying clients.
-          </p>
-          <div class="hero__actions">
-            <a href="#work" class="btn btn--primary btn--lg">View Work</a>
-            <a href="#contact" class="btn btn--ghost btn--lg">Get a Website</a>
-          </div>
+        <div class="hero__typewriter" id="heroTypewriter" aria-label="/f.dev">
+          <span class="typewriter__text"></span><span class="typewriter__cursor"></span>
         </div>
-
-        <div class="hero__visual">
-          <div class="mockup">
-            <div class="mockup__bar">
-              <span class="mockup__dot"></span>
-              <span class="mockup__dot"></span>
-              <span class="mockup__dot"></span>
-              <div class="mockup__url">tinyland.com</div>
-            </div>
-            <div class="mockup__screen">
-              <div class="mockup__hero-block">
-                <div class="mockup__headline-line mockup__headline-line--lg"></div>
-                <div class="mockup__headline-line mockup__headline-line--md"></div>
-                <div class="mockup__cta-row">
-                  <div class="mockup__btn mockup__btn--accent"></div>
-                  <div class="mockup__btn mockup__btn--ghost"></div>
-                </div>
-              </div>
-              <div class="mockup__cards-row">
-                <div class="mockup__card">
-                  <div class="mockup__card-icon"></div>
-                  <div class="mockup__card-line"></div>
-                  <div class="mockup__card-line mockup__card-line--short"></div>
-                </div>
-                <div class="mockup__card">
-                  <div class="mockup__card-icon mockup__card-icon--2"></div>
-                  <div class="mockup__card-line"></div>
-                  <div class="mockup__card-line mockup__card-line--short"></div>
-                </div>
-                <div class="mockup__card">
-                  <div class="mockup__card-icon mockup__card-icon--3"></div>
-                  <div class="mockup__card-line"></div>
-                  <div class="mockup__card-line mockup__card-line--short"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="hero__visual-glow" aria-hidden="true"></div>
+        <h1 class="hero__headline" data-animate>
+          We build websites<br>
+          that <span class="word-grow">grow</span><br>
+          <span class="text-gradient">small businesses.</span>
+        </h1>
+        <p class="hero__sub" data-animate>
+          Fast, clean, and designed to bring you customers —<br class="break-md"> from Barrie to all of Ontario.
+        </p>
+        <div class="hero__actions" data-animate>
+          <a href="#contact"   class="btn btn--primary btn--lg">Get a free quote</a>
+          <a href="#portfolio" class="btn btn--secondary btn--lg">View projects</a>
         </div>
-
-      </div>
-      <div class="hero__slash-bg" aria-hidden="true">/</div>
-    </section>
-
-    <div class="section-divider" aria-hidden="true"><span class="section-divider__slash">/</span></div>
-
-    <!-- ==================== WORK ==================== -->
-    <section class="section" id="work">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__label"><span class="slash">/</span> Work</span>
-          <h2 class="section__title">Results, not just design</h2>
-          <p class="section__sub">Real projects built for real local businesses.</p>
-        </div>
-
-        <div class="projects__grid">
-
-          <article class="project-card">
-            <div class="project-card__preview project-card__preview--daycare">
-              <div class="project-card__screen">
-                <div class="pc__nav"></div>
-                <div class="pc__hero">
-                  <div class="pc__h-text">
-                    <div class="pc__line pc__line--title"></div>
-                    <div class="pc__line pc__line--sub"></div>
-                    <div class="pc__btn"></div>
-                  </div>
-                  <div class="pc__h-img"></div>
-                </div>
-              </div>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__meta">
-                <span class="project-card__type">New Website</span>
-                <span class="project-card__result">+60% more inquiries</span>
-              </div>
-              <h3 class="project-card__name">Tinyland Daycare</h3>
-              <p class="project-card__desc">More enrollments. Cleaner design. Built mobile-first for parents searching on their phones.</p>
-              <a href="#" class="btn btn--outline">View Live <span class="arrow">→</span></a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__preview project-card__preview--moving">
-              <div class="project-card__screen">
-                <div class="pc__nav"></div>
-                <div class="pc__hero">
-                  <div class="pc__h-text">
-                    <div class="pc__line pc__line--title"></div>
-                    <div class="pc__line pc__line--sub"></div>
-                    <div class="pc__btn pc__btn--blue"></div>
-                  </div>
-                  <div class="pc__h-truck"></div>
-                </div>
-              </div>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__meta">
-                <span class="project-card__type project-card__type--redesign">Redesign</span>
-                <span class="project-card__result">More calls. Better trust.</span>
-              </div>
-              <h3 class="project-card__name">Swift Moving Co.</h3>
-              <p class="project-card__desc">Complete overhaul of an outdated site. Quote requests up significantly from day one.</p>
-              <a href="#" class="btn btn--outline">View Live <span class="arrow">→</span></a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__preview project-card__preview--cleaning">
-              <div class="project-card__screen">
-                <div class="pc__nav"></div>
-                <div class="pc__hero">
-                  <div class="pc__h-text">
-                    <div class="pc__line pc__line--title"></div>
-                    <div class="pc__line pc__line--sub"></div>
-                    <div class="pc__btn pc__btn--teal"></div>
-                  </div>
-                  <div class="pc__h-clean"></div>
-                </div>
-              </div>
-            </div>
-            <div class="project-card__body">
-              <div class="project-card__meta">
-                <span class="project-card__type">New Website</span>
-                <span class="project-card__result">Booked out 3 weeks ahead</span>
-              </div>
-              <h3 class="project-card__name">BrightClean Services</h3>
-              <p class="project-card__desc">Zero web presence to fully booked. Fast, local-SEO-ready site delivered in under a week.</p>
-              <a href="#" class="btn btn--outline">View Live <span class="arrow">→</span></a>
-            </div>
-          </article>
-
+        <div class="hero__trust" data-animate>
+          <span class="trust-pill">Local in Ontario</span>
+          <span class="trust-sep">/</span>
+          <span class="trust-pill">7–14 day delivery</span>
+          <span class="trust-sep">/</span>
+          <span class="trust-pill">Mobile-first</span>
+          <span class="trust-sep">/</span>
+          <span class="trust-pill">Reliable support</span>
         </div>
       </div>
     </section>
 
-    <div class="section-divider" aria-hidden="true"><span class="section-divider__slash">/</span></div>
-
-    <!-- ==================== BEFORE / AFTER ==================== -->
-    <section class="section section--dark" id="before-after">
+    <!-- ===================== TRUST ===================== -->
+    <section class="trust-section" id="trust">
       <div class="container">
-        <div class="section__header">
-          <span class="section__label"><span class="slash">/</span> Transformation</span>
-          <h2 class="section__title">The difference a redesign makes</h2>
-          <p class="section__sub">Drag to compare. Same business — completely different results.</p>
-        </div>
-
-        <div class="ba-wrapper">
-          <div class="ba-slider" id="baSlider">
-
-            <div class="ba-after">
-              <div class="ba-screen ba-screen--after">
-                <div class="ba-screen__nav ba-screen__nav--dark">
-                  <div class="ba-screen__logo ba-screen__logo--white"></div>
-                  <div class="ba-screen__links">
-                    <span></span><span></span><span></span>
-                  </div>
-                  <div class="ba-screen__cta-btn"></div>
-                </div>
-                <div class="ba-screen__body">
-                  <div class="ba-screen__text">
-                    <div class="ba-line ba-line--xl ba-line--white"></div>
-                    <div class="ba-line ba-line--lg ba-line--white"></div>
-                    <div class="ba-line ba-line--sm ba-line--muted"></div>
-                    <div class="ba-line ba-line--sm ba-line--muted ba-line--shorter"></div>
-                    <div class="ba-screen__btns">
-                      <div class="ba-btn ba-btn--gradient"></div>
-                      <div class="ba-btn ba-btn--ghost"></div>
-                    </div>
-                  </div>
-                  <div class="ba-screen__visual">
-                    <div class="ba-card">
-                      <div class="ba-card__img"></div>
-                      <div class="ba-card__line"></div>
-                      <div class="ba-card__line ba-card__line--short"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="ba-screen__features">
-                  <div class="ba-feature"></div>
-                  <div class="ba-feature"></div>
-                  <div class="ba-feature"></div>
-                </div>
-              </div>
-              <div class="ba-label ba-label--after">After</div>
+        <div class="trust-grid" data-animate-group>
+          <div class="trust-card">
+            <div class="trust-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 2L3 7V12C3 16.97 6.84 21.61 12 23C17.16 21.61 21 16.97 21 12V7L12 2Z" stroke="url(#ti1)" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M9 12L11 14L15 10" stroke="url(#ti1)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs><linearGradient id="ti1" x1="3" y1="2" x2="21" y2="23" gradientUnits="userSpaceOnUse"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#3B82F6"/></linearGradient></defs>
+              </svg>
             </div>
-
-            <div class="ba-before">
-              <div class="ba-screen ba-screen--before">
-                <div class="ba-screen__nav ba-screen__nav--light">
-                  <div class="ba-screen__logo ba-screen__logo--dark"></div>
-                  <div class="ba-screen__links ba-screen__links--dark">
-                    <span></span><span></span><span></span><span></span><span></span>
-                  </div>
-                </div>
-                <div class="ba-screen__body ba-screen__body--light">
-                  <div class="ba-screen__img-block"></div>
-                  <div class="ba-screen__text">
-                    <div class="ba-line ba-line--md ba-line--dark"></div>
-                    <div class="ba-line ba-line--sm ba-line--dark"></div>
-                    <div class="ba-line ba-line--sm ba-line--dark"></div>
-                    <div class="ba-line ba-line--sm ba-line--gray"></div>
-                    <div class="ba-line ba-line--sm ba-line--gray ba-line--shorter"></div>
-                    <div class="ba-btn ba-btn--old"></div>
-                  </div>
-                </div>
-                <div class="ba-screen__noise"></div>
-              </div>
-              <div class="ba-label ba-label--before">Before</div>
+            <h3 class="trust-card__title">Local in Ontario</h3>
+            <p class="trust-card__desc">Based in Barrie. We know the local market and build for the customers you actually want to reach.</p>
+          </div>
+          <div class="trust-card">
+            <div class="trust-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" stroke="url(#ti2)" stroke-width="1.5"/>
+                <path d="M12 7V12L15 15" stroke="url(#ti2)" stroke-width="1.5" stroke-linecap="round"/>
+                <defs><linearGradient id="ti2" x1="3" y1="3" x2="21" y2="21" gradientUnits="userSpaceOnUse"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#3B82F6"/></linearGradient></defs>
+              </svg>
             </div>
-
-            <div class="ba-handle" id="baHandle">
-              <div class="ba-handle__line"></div>
-              <div class="ba-handle__circle">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                  <path d="M7 10L3 6M3 6L7 2M3 6H17M13 10L17 14M17 14L13 18M17 14H3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div class="ba-handle__line"></div>
+            <h3 class="trust-card__title">Built Fast</h3>
+            <p class="trust-card__desc">Most projects are delivered in 7–14 days. No endless timelines — you get results quickly.</p>
+          </div>
+          <div class="trust-card">
+            <div class="trust-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="5" y="2" width="14" height="20" rx="2" stroke="url(#ti3)" stroke-width="1.5"/>
+                <path d="M9 18H15" stroke="url(#ti3)" stroke-width="1.5" stroke-linecap="round"/>
+                <defs><linearGradient id="ti3" x1="5" y1="2" x2="19" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#3B82F6"/></linearGradient></defs>
+              </svg>
             </div>
-
+            <h3 class="trust-card__title">Mobile-First</h3>
+            <p class="trust-card__desc">Every site is built for phones first. Over 70% of your customers browse on mobile — we make sure it works perfectly.</p>
+          </div>
+          <div class="trust-card">
+            <div class="trust-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M21 15C21 15.53 20.79 16.04 20.41 16.41C20.04 16.79 19.53 17 19 17H7L3 21V5C3 4.47 3.21 3.96 3.59 3.59C3.96 3.21 4.47 3 5 3H19C19.53 3 20.04 3.21 20.41 3.59C20.79 3.96 21 4.47 21 5V15Z" stroke="url(#ti4)" stroke-width="1.5" stroke-linejoin="round"/>
+                <defs><linearGradient id="ti4" x1="3" y1="3" x2="21" y2="21" gradientUnits="userSpaceOnUse"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#3B82F6"/></linearGradient></defs>
+              </svg>
+            </div>
+            <h3 class="trust-card__title">Ongoing Support</h3>
+            <p class="trust-card__desc">We don't disappear after launch. Updates, questions, changes — we're always available for our clients.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="section-divider" aria-hidden="true"><span class="section-divider__slash">/</span></div>
-
-    <!-- ==================== WHAT YOU GET ==================== -->
-    <section class="section" id="outcomes">
+    <!-- ===================== SERVICES ===================== -->
+    <section class="section" id="services">
       <div class="container">
-        <div class="section__header">
-          <span class="section__label"><span class="slash">/</span> Outcomes</span>
-          <h2 class="section__title">What you actually get</h2>
+        <div class="section-header section-header--center" data-animate>
+          <div class="section-eyebrow"><span class="eyebrow-slash">/</span> Services</div>
+          <h2 class="section-title">Two ways we can help</h2>
+          <p class="section-subtitle">Whether you're starting from zero or ready for a change.</p>
         </div>
-
-        <div class="outcomes__grid">
-          <div class="outcome-item">
-            <span class="outcome-item__slash" aria-hidden="true">/</span>
-            <div class="outcome-item__body">
-              <h4 class="outcome-item__title">More calls &amp; inquiries</h4>
-              <p class="outcome-item__desc">Clear CTAs and trust signals that turn visitors into leads immediately.</p>
-            </div>
-          </div>
-          <div class="outcome-item">
-            <span class="outcome-item__slash" aria-hidden="true">/</span>
-            <div class="outcome-item__body">
-              <h4 class="outcome-item__title">Higher conversion rate</h4>
-              <p class="outcome-item__desc">Designed around what your customer needs to see before they contact you.</p>
-            </div>
-          </div>
-          <div class="outcome-item">
-            <span class="outcome-item__slash" aria-hidden="true">/</span>
-            <div class="outcome-item__body">
-              <h4 class="outcome-item__title">Fast-loading pages</h4>
-              <p class="outcome-item__desc">No bloated builders. Clean code that loads in under 2 seconds on mobile.</p>
-            </div>
-          </div>
-          <div class="outcome-item">
-            <span class="outcome-item__slash" aria-hidden="true">/</span>
-            <div class="outcome-item__body">
-              <h4 class="outcome-item__title">Mobile-first design</h4>
-              <p class="outcome-item__desc">80% of your clients search from their phone. Your site will be ready.</p>
-            </div>
-          </div>
-          <div class="outcome-item">
-            <span class="outcome-item__slash" aria-hidden="true">/</span>
-            <div class="outcome-item__body">
-              <h4 class="outcome-item__title">Premium visual identity</h4>
-              <p class="outcome-item__desc">Looks like a $5,000 website. Positions you ahead of every local competitor.</p>
-            </div>
-          </div>
-          <div class="outcome-item">
-            <span class="outcome-item__slash" aria-hidden="true">/</span>
-            <div class="outcome-item__body">
-              <h4 class="outcome-item__title">You own it — fully</h4>
-              <p class="outcome-item__desc">No subscriptions, no builders, no lock-in. Your site, your code, your business.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="section-divider" aria-hidden="true"><span class="section-divider__slash">/</span></div>
-
-    <!-- ==================== SERVICES ==================== -->
-    <section class="section section--alt" id="services">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__label"><span class="slash">/</span> Services</span>
-          <h2 class="section__title">Two ways I can help</h2>
-          <p class="section__sub">Whether you're starting from scratch or fixing what's broken.</p>
-        </div>
-
-        <div class="services__grid">
-
+        <div class="services-grid" data-animate-group>
           <div class="service-card">
-            <div class="service-card__number">01</div>
-            <div class="service-card__icon">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-                <rect x="2" y="5" width="24" height="18" rx="2" stroke="url(#sg1)" stroke-width="1.5"/>
-                <path d="M2 10H26" stroke="url(#sg1)" stroke-width="1.5"/>
-                <circle cx="6" cy="7.5" r="1" fill="url(#sg1)"/>
-                <circle cx="10" cy="7.5" r="1" fill="url(#sg1)"/>
-                <path d="M10 16H18M10 19H15" stroke="url(#sg1)" stroke-width="1.5" stroke-linecap="round"/>
-                <defs>
-                  <linearGradient id="sg1" x1="2" y1="5" x2="26" y2="23" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#7C3AED"/>
-                    <stop offset="1" stop-color="#3B82F6"/>
-                  </linearGradient>
-                </defs>
+            <div class="service-card__label">01</div>
+            <div class="service-card__icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <rect x="2" y="5" width="28" height="22" rx="3" stroke="url(#si1)" stroke-width="1.5"/>
+                <path d="M2 11H30" stroke="url(#si1)" stroke-width="1.5"/>
+                <circle cx="7" cy="8" r="1.25" fill="url(#si1)"/>
+                <circle cx="11.5" cy="8" r="1.25" fill="url(#si1)"/>
+                <path d="M11 19H21M11 23H17" stroke="url(#si1)" stroke-width="1.5" stroke-linecap="round"/>
+                <defs><linearGradient id="si1" x1="2" y1="5" x2="30" y2="27" gradientUnits="userSpaceOnUse"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#3B82F6"/></linearGradient></defs>
               </svg>
             </div>
             <h3 class="service-card__title">Website Creation</h3>
-            <p class="service-card__desc">You don't have a website yet. I build one from scratch — designed to convert, fast to load, built to last.</p>
+            <p class="service-card__desc">You don't have a website yet. We build one from scratch — designed to convert visitors into customers, load fast, and represent your business professionally.</p>
             <ul class="service-card__list">
-              <li>Custom design, zero templates</li>
+              <li>Custom design, no templates</li>
               <li>Mobile-first &amp; SEO-ready</li>
-              <li>Contact forms &amp; CTAs built in</li>
+              <li>Contact forms &amp; call-to-actions</li>
               <li>Delivered in 7–14 days</li>
             </ul>
-            <a href="#contact" class="btn btn--primary">Start a Project</a>
+            <a href="#contact" class="btn btn--outline service-card__cta">Start a project <span class="btn-arrow">→</span></a>
           </div>
-
-          <div class="service-card service-card--featured">
-            <div class="service-card__number">02</div>
-            <div class="service-card__badge">Most Popular</div>
-            <div class="service-card__icon">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-                <path d="M4 8L14 4L24 8V14C24 19.5 19.5 23.5 14 25C8.5 23.5 4 19.5 4 14V8Z" stroke="url(#sg2)" stroke-width="1.5"/>
-                <path d="M10 14L13 17L18 11" stroke="url(#sg2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <defs>
-                  <linearGradient id="sg2" x1="4" y1="4" x2="24" y2="25" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#7C3AED"/>
-                    <stop offset="1" stop-color="#3B82F6"/>
-                  </linearGradient>
-                </defs>
+          <div class="service-card service-card--alt">
+            <div class="service-card__label">02</div>
+            <div class="service-card__icon-wrap">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <path d="M26 14C26 20.63 20.63 26 14 26C7.37 26 2 20.63 2 14C2 7.37 7.37 2 14 2" stroke="url(#si2)" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M22 2L28 2L30 8" stroke="url(#si2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M28 2L22 8" stroke="url(#si2)" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M10 14L13 17L19 11" stroke="url(#si2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs><linearGradient id="si2" x1="2" y1="2" x2="30" y2="26" gradientUnits="userSpaceOnUse"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#3B82F6"/></linearGradient></defs>
               </svg>
             </div>
             <h3 class="service-card__title">Website Redesign</h3>
-            <p class="service-card__desc">You have a site but it's not working. I rebuild it — same business, completely different results.</p>
+            <p class="service-card__desc">You have a site but it's outdated or not bringing results. We rebuild it — keeping what works, fixing what doesn't, and making it look like it belongs in 2025.</p>
             <ul class="service-card__list">
               <li>Full visual &amp; structural overhaul</li>
               <li>Conversion-focused layout</li>
               <li>Keep your domain &amp; content</li>
               <li>Delivered in 5–10 days</li>
             </ul>
-            <a href="#contact" class="btn btn--primary">Redesign My Site</a>
+            <a href="#contact" class="btn btn--primary service-card__cta">Redesign my site <span class="btn-arrow">→</span></a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PORTFOLIO ===================== -->
+    <section class="section section--alt" id="portfolio">
+      <div class="container">
+        <div class="section-header section-header--center" data-animate>
+          <div class="section-eyebrow"><span class="eyebrow-slash">/</span> Work</div>
+          <h2 class="section-title">Recent projects</h2>
+          <p class="section-subtitle">A selection of websites we built and redesigned for local businesses.</p>
+        </div>
+        <div class="portfolio-grid" data-animate-group>
+
+          <article class="portfolio-card portfolio-card--featured">
+            <div class="portfolio-card__visual portfolio-card__visual--a">
+              <div class="portfolio-card__mockup">
+                <div class="pm__bar"><span></span><span></span><span></span><em>barrieHomeServices.ca</em></div>
+                <div class="pm__body">
+                  <div class="pm__hero">
+                    <div class="pm__lines">
+                      <div class="pm__line pm__line--xl"></div>
+                      <div class="pm__line pm__line--lg"></div>
+                      <div class="pm__line pm__line--sm"></div>
+                      <div class="pm__cta"></div>
+                    </div>
+                  </div>
+                  <div class="pm__cards">
+                    <div class="pm__card"></div>
+                    <div class="pm__card"></div>
+                    <div class="pm__card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card__info">
+              <div class="portfolio-card__meta">
+                <span class="badge badge--new">New Website</span>
+                <span class="portfolio-card__result">+80% more quote requests</span>
+              </div>
+              <h3 class="portfolio-card__title">Barrie Home Services</h3>
+              <p class="portfolio-card__desc">A full-featured site for a local home services company. Mobile-first, fast, and built to convert visitors into calls.</p>
+              <a href="#" class="link-arrow">View project <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-card__visual portfolio-card__visual--b">
+              <div class="portfolio-card__mockup portfolio-card__mockup--sm">
+                <div class="pm__bar pm__bar--sm"><span></span><span></span><span></span></div>
+                <div class="pm__body pm__body--sm">
+                  <div class="pm__line pm__line--xl pm__line--white"></div>
+                  <div class="pm__line pm__line--lg pm__line--white"></div>
+                  <div class="pm__cta pm__cta--sm"></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card__info portfolio-card__info--sm">
+              <span class="badge badge--redesign">Redesign</span>
+              <h3 class="portfolio-card__title">Maple Daycare</h3>
+              <p class="portfolio-card__desc">Outdated site transformed into a modern, parent-friendly experience. Enrollment inquiries doubled.</p>
+              <a href="#" class="link-arrow">View project <span>→</span></a>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <div class="portfolio-card__visual portfolio-card__visual--c">
+              <div class="portfolio-card__mockup portfolio-card__mockup--sm">
+                <div class="pm__bar pm__bar--sm"><span></span><span></span><span></span></div>
+                <div class="pm__body pm__body--sm">
+                  <div class="pm__line pm__line--xl pm__line--white"></div>
+                  <div class="pm__line pm__line--lg pm__line--white"></div>
+                  <div class="pm__cta pm__cta--sm pm__cta--alt"></div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card__info portfolio-card__info--sm">
+              <span class="badge badge--new">New Website</span>
+              <h3 class="portfolio-card__title">Ontario Moving Co.</h3>
+              <p class="portfolio-card__desc">Zero online presence to fully booked in 3 weeks. Clean, fast, and built to rank locally.</p>
+              <a href="#" class="link-arrow">View project <span>→</span></a>
+            </div>
+          </article>
 
         </div>
       </div>
     </section>
 
-    <div class="section-divider" aria-hidden="true"><span class="section-divider__slash">/</span></div>
-
-    <!-- ==================== PROCESS ==================== -->
+    <!-- ===================== PROCESS ===================== -->
     <section class="section" id="process">
       <div class="container">
-        <div class="section__header">
-          <span class="section__label"><span class="slash">/</span> Process</span>
-          <h2 class="section__title">Simple. Fast. Done.</h2>
-          <p class="section__sub">No long meetings. No weeks of back-and-forth.</p>
+        <div class="section-header section-header--center" data-animate>
+          <div class="section-eyebrow"><span class="eyebrow-slash">/</span> How it works</div>
+          <h2 class="section-title">Simple from start to launch</h2>
+          <p class="section-subtitle">A clear process with no surprises. You always know what's happening.</p>
         </div>
-
-        <div class="process__steps">
-
+        <div class="process-grid" data-animate-group>
           <div class="process-step">
             <div class="process-step__number">01</div>
-            <div class="process-step__body">
-              <h4 class="process-step__title">You share your site or idea</h4>
-              <p class="process-step__desc">Send me your current website or describe your business. That's all I need to get started.</p>
-            </div>
+            <h4 class="process-step__title">Discovery</h4>
+            <p class="process-step__desc">We learn about your business, your goals, and your customers. One short call or a quick form — no lengthy intake documents.</p>
           </div>
-
           <div class="process-step">
             <div class="process-step__number">02</div>
-            <div class="process-step__body">
-              <h4 class="process-step__title">I build or redesign it</h4>
-              <p class="process-step__desc">I handle everything — design, structure, mobile, speed. You stay focused on running your business.</p>
-            </div>
+            <h4 class="process-step__title">Design</h4>
+            <p class="process-step__desc">We create the visual direction. You see it, you approve it, we refine it together until it's exactly right.</p>
           </div>
-
           <div class="process-step">
             <div class="process-step__number">03</div>
-            <div class="process-step__body">
-              <h4 class="process-step__title">You get more clients</h4>
-              <p class="process-step__desc">A site built to convert, ready to launch. Your competitors won't know what happened.</p>
-            </div>
+            <h4 class="process-step__title">Build</h4>
+            <p class="process-step__desc">We code it clean and fast. No bloated page builders — just efficient, maintainable code that loads in under 2 seconds.</p>
           </div>
-
+          <div class="process-step">
+            <div class="process-step__number">04</div>
+            <h4 class="process-step__title">Launch</h4>
+            <p class="process-step__desc">We go live together. Your site is tested, deployed, and handed over with everything you need to manage it going forward.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <div class="section-divider" aria-hidden="true"><span class="section-divider__slash">/</span></div>
-
-    <!-- ==================== CTA ==================== -->
-    <section class="cta-section" id="contact">
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="section section--alt" id="testimonials">
       <div class="container">
-        <div class="cta-section__inner">
-          <div class="cta-section__slash" aria-hidden="true">/</div>
-          <p class="cta-section__label">Ready when you are</p>
-          <h2 class="cta-section__title">
-            I can build or redesign your website <span class="text-gradient">like this.</span>
-          </h2>
-          <p class="cta-section__sub">One message is all it takes. No commitment, no pressure — just a real conversation about your website and what it should be doing for you.</p>
-          <a href="mailto:hello@f.dev" class="btn btn--primary btn--xl">Get Started Today</a>
+        <div class="section-header section-header--center" data-animate>
+          <div class="section-eyebrow"><span class="eyebrow-slash">/</span> Testimonials</div>
+          <h2 class="section-title">What clients say</h2>
+        </div>
+        <div class="testimonials-grid" data-animate-group>
+          <div class="testimonial-card">
+            <div class="testimonial-card__quote">"</div>
+            <p class="testimonial-card__text">Working with /f.dev was the best decision for our business. The new site looks incredible and within a month we were getting double the calls. Worth every dollar.</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">SM</div>
+              <div>
+                <div class="testimonial-card__name">Sarah M.</div>
+                <div class="testimonial-card__role">Owner — Clean Pro Services, Barrie</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__quote">"</div>
+            <p class="testimonial-card__text">They delivered in exactly 10 days, exactly what they promised. The site is fast, looks professional, and our guys can actually use it to send quote links to customers.</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">MT</div>
+              <div>
+                <div class="testimonial-card__name">Mike T.</div>
+                <div class="testimonial-card__role">Founder — Barrie Moving Co.</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__quote">"</div>
+            <p class="testimonial-card__text">Our old website was embarrassing. Parents would show up and say they almost didn't call because the site looked so outdated. The redesign completely changed how people see us.</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">LK</div>
+              <div>
+                <div class="testimonial-card__name">Linda K.</div>
+                <div class="testimonial-card__role">Director — Maple Daycare, Barrie</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FINAL CTA ===================== -->
+    <section class="cta-final" id="contact">
+      <div class="container">
+        <div class="cta-final__inner" data-animate>
+          <div class="section-eyebrow section-eyebrow--light"><span class="eyebrow-slash">/</span> Let's work together</div>
+          <h2 class="cta-final__title">Let's build your website.</h2>
+          <p class="cta-final__sub">Tell us about your business. We'll get back to you within 24 hours with a clear plan and a transparent quote.</p>
+          <div class="cta-final__actions">
+            <a href="mailto:hello@f.dev" class="btn btn--white btn--lg">Get a free quote</a>
+            <a href="mailto:hello@f.dev" class="cta-final__email">hello@f.dev</a>
+          </div>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
+  <!-- ===================== FOOTER ===================== -->
   <footer class="footer">
     <div class="container footer__inner">
-      <a href="/" class="footer__logo">
-        <img src="assets/fdev-logo.png" alt="/f.dev" class="footer__logo-img">
-      </a>
-      <p class="footer__copy">Websites that bring clients.</p>
-      <a href="mailto:hello@f.dev" class="footer__email">hello@f.dev</a>
+      <div class="footer__brand">
+        <a href="/" class="footer__logo">
+          <img src="assets/fdev-logo.png" alt="/f.dev" class="footer__logo-img">
+        </a>
+        <p class="footer__tagline">Websites that grow businesses.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="#portfolio" class="footer__link">Work</a>
+        <a href="#services"  class="footer__link">Services</a>
+        <a href="#process"   class="footer__link">Process</a>
+        <a href="#contact"   class="footer__link">Contact</a>
+      </nav>
+      <div class="footer__legal">
+        <span>© 2025 /f.dev</span>
+        <span class="footer__sep">·</span>
+        <span>Ontario, Canada</span>
+      </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
